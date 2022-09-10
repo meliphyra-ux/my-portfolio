@@ -1,0 +1,95 @@
+.aboutMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+    top: 0;
+    background-color: #FAB95B;
+    color: #1A3263;
+    min-height: calc(100vh - 100px);
+}
+.aboutMe article{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;  
+}
+.aboutMe img{
+    width: 50%;
+    max-width: 450px;
+    margin-left: 35px;
+    border-radius: 50%;
+    animation-delay: 0.75s;
+}
+.aboutMe article p, .aboutMe article h2, .aboutMe article button{
+    position: relative;
+    margin: 20px 0;
+}
+.animation{
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.aboutMe article p,.aboutMe article h2{
+    text-align: left;
+}
+.aboutMe article p{
+    animation-delay: 0.25s;
+    line-height: 1.85;
+}
+.aboutMe article p span {
+    color: #E8E2DB;
+    background-color: #1A3263;
+    border-radius: 5px;
+    padding: 1.5px;
+}
+.aboutMe article p a:visited {
+    color: #1A3263;
+}
+.aboutMe article h2{
+    font-size: 4rem;
+}
+.aboutMe article button{
+    width: 50%;
+    background-color: #F16821;
+    color: #1A3263;
+    border: 2px solid #1A3263;
+    padding: 10px 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+    animation-delay: 0.5s;
+    transition: all 0.2s ease-in-out;
+}
+.aboutMe article button:hover{
+    background-color: #1A3263;
+    color: #FAB95B;
+    font-size: 1.5rem;
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 750px) {
+    .aboutMe img{
+        display: none;
+    }
+    .aboutMe article{
+        width: 100%;
+        align-items: center;
+    }
+    .aboutMe article p{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .aboutMe article p{
+        font-size: 1.25rem;
+    }
+}
