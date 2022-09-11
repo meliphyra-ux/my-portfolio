@@ -1,33 +1,31 @@
-import React from 'react'
-import linkedIn from '../../assets/images/linkedin.png'
-import telegram from '../../assets/images/telegram.png'
-import instagram from '../../assets/images/instagram.png'
-import mail from '../../assets/images/mail.png'
+import React from "react";
+import linkedIn from "../../assets/images/linkedin.png";
+import telegram from "../../assets/images/telegram.png";
+import mail from "../../assets/images/mail.png";
+import styles from "../../assets/styles/mycontacts.module.css";
+import ContactBox from "../../components/ContactBox";
 
 export default function MyContacts() {
   return (
-    <section>
-        <article>
-            <h2>Feel free to contact me using:</h2>
-            <ul>
-                <li>
-                    <img src={linkedIn} />
-                    <a href="">LinkedIn</a>
-                </li>
-                <li>
-                    <img src={telegram} />
-                    <a href="">Telegram</a>
-                </li>
-                <li>
-                    <img src={instagram} />
-                    <a href="">Instagram</a>
-                </li>
-                <li>
-                    <img src={mail} />
-                    <a href="">Email</a>
-                </li>
-            </ul>
-        </article>
+    <section className={styles.myContacts}>
+        <h2>Get in touch with me using:</h2>
+        <div>
+          <ContactBox
+            boxName="LinkedIn"
+            boxImg={linkedIn}
+            boxDescription="Very popular platform for employers & employee. With over 750 millions of users, might be the most recognizable job finding website in the world"
+          />
+          <ContactBox 
+            boxName="Telegram"
+            boxImg={telegram}
+            boxDescription="Cloud-based mobile and desktop messaging app with a focus on security and speed."
+          />
+          <ContactBox 
+            boxName="Email"
+            boxImg={mail}
+            boxDescription="If you don't have LinkedIn or Telegram - feel free to get in touch with me by... good & old email"
+          />
+        </div>
     </section>
-  )
+  );
 }

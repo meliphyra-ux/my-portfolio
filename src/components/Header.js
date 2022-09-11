@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import styles from '../assets/styles/header.module.css'
 import menu from '../assets/images/menu.png'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [toggleNavigation, setToggleNavigation] = useState(false);
@@ -9,9 +10,9 @@ export default function Header() {
         {/* Here will be my logo */}
         <h1>My portfolio</h1>
         <nav className={toggleNavigation === true ? styles.active : ""}>
-            <a href='https://github.com/meliphyra-ux'>About me</a>
+            <Link to='/'>About me</Link>
             <a href='https://github.com/meliphyra-ux'>My projects</a>
-            <a href='https://github.com/meliphyra-ux'>My contacts</a>
+            <Link to='/my-contacts'>My contacts</Link>
         </nav>
         <img src={menu} onClick={()=>setToggleNavigation(!toggleNavigation)} alt="burger icon"/>
     </header>

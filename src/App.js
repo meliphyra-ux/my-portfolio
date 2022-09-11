@@ -1,15 +1,22 @@
-import './App.css';
-import Header from './components/Header';
-import AboutMe from './pages/about-me/AboutMe';
+import "./App.css";
+import Header from "./components/Header";
+import AboutMe from "./pages/about-me/AboutMe";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MyContacts from "./pages/my-contacts/MyContacts";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <AboutMe />
-      </main>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/my-contacts" element={<MyContacts />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
