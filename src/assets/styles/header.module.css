@@ -22,7 +22,8 @@
 }
 .header img {
   display: none;
-  filter: invert(0.75)
+  width: 48px;
+  
 }
 
 @media screen and (max-width: 800px) {
