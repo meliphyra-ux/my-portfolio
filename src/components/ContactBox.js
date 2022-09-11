@@ -6,6 +6,7 @@ export default function ContactBox({boxName, boxImg, boxDescription}) {
         <img src={boxImg} alt='' />
         <figcaption>{boxName}</figcaption>
         <p>{boxDescription}</p>
+        <button>Contact me</button>
     </figure>
   )
 }

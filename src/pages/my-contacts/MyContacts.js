@@ -23,7 +23,7 @@ export default function MyContacts() {
           <ContactBox 
             boxName="Email"
             boxImg={mail}
-            boxDescription="If you don't have LinkedIn or Telegram - feel free to get in touch with me by... good & old email"
+            boxDescription="If you don't have LinkedIn or Telegram - feel free to get in touch with me by... gold & old email"
           />
         </div>
     </section>
