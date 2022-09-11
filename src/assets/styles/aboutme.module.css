@@ -39,6 +39,7 @@
 .aboutMe article p{
     animation-delay: 0.25s;
     line-height: 1.85;
+    font-size: 1.10rem;
 }
 .aboutMe article p span {
     color: #E8E2DB;

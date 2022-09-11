@@ -13,7 +13,7 @@ export default function MyContacts() {
           <ContactBox
             boxName="LinkedIn"
             boxImg={linkedIn}
-            boxDescription="Very popular platform for employers & employee. With over 750 millions of users, might be the most recognizable job finding website in the world"
+            boxDescription="With over 750 millions of users, might be the most recognizable job finding website in the world"
           />
           <ContactBox 
             boxName="Telegram"
@@ -23,7 +23,7 @@ export default function MyContacts() {
           <ContactBox 
             boxName="Email"
             boxImg={mail}
-            boxDescription="If you don't have LinkedIn or Telegram - feel free to get in touch with me by... gold & old email"
+            boxDescription="If you want, feel free to get in touch with me by... gold & old email"
           />
         </div>
     </section>
