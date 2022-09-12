@@ -10,7 +10,7 @@
 .myContacts h2{
     margin: 6% 0 10%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 .myContacts div{
     display: flex;
@@ -22,12 +22,12 @@
     box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.3);
     flex: 0 0 30% ;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     min-width: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 300px;
+    min-height: 400px;
     margin: 5px;
     position: relative;
 }
@@ -35,6 +35,10 @@
     margin: 15px 0;
     font-size: 1.5rem;
     font-weight: bold;
+}
+.myContacts div figure p{
+
+    font-size: 1.3rem;
 }
 .myContacts div figure button{
     position: absolute;
@@ -44,13 +48,19 @@
     color: #e8e2db;
     border: none;
     padding: 5px;
-    font-size: 0.90rem;
+    font-size: 1.2rem;
     transition: all 0.15s ease-in-out;
+    cursor: pointer;
 }
 .myContacts div figure button:hover{
     color:#1a3263;
     background-color: #F16821;
     border: 2px solid #1a3263;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
+@media screen and (max-width: 772px) {
+    .myContacts div figure{
+        min-height: 300px;
+    }
+}

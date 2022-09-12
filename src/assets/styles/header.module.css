@@ -10,12 +10,14 @@
 }
 .header h1 {
   color: #e8e2db;
+  font-size: 2.3rem;
 }
 .header nav a {
   color: #e8e2db;
   margin: 0 20px;
   font-size: 1.15rem;
   transition: all 0.2s ease;
+  font-size: 1.4rem;
 }
 .header nav a:hover {
   color: #fab95b;
@@ -23,10 +25,11 @@
 .header img {
   display: none;
   width: 32px;
+  cursor: pointer;
   
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
   .header img {
     display: block;
   }

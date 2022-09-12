@@ -39,7 +39,7 @@
 .aboutMe article p{
     animation-delay: 0.25s;
     line-height: 1.85;
-    font-size: 1.10rem;
+    font-size: 1.35rem;
 }
 .aboutMe article p span {
     color: #E8E2DB;
@@ -90,7 +90,7 @@
     }
 }
 @media screen and (max-width: 480px) {
-    .aboutMe article p{
+    /* .aboutMe article p{
         font-size: 1.25rem;
-    }
+    } */
 }
