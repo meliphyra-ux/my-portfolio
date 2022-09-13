@@ -21,7 +21,7 @@ export default function AboutMe() {
           recommend myself as a developer. Feel free to contact me, if you have
           some ideas or you want to have a chat with me
         </p>
-        <button className={styles.animation}>My projects</button>
+        <button className={styles.animation}><a href="https://github.com/meliphyra-ux" target="_blank" rel="noreferrer">My projects</a></button>
       </article>
       <img src={avatar} className={styles.animation} alt="My online avatar" />
     </section>

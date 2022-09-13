@@ -11,7 +11,7 @@ export default function Header() {
         <h1>My portfolio</h1>
         <nav className={toggleNavigation === true ? styles.active : ""}>
             <Link to='/'>About me</Link>
-            <a href='https://github.com/meliphyra-ux'>My projects</a>
+            <a href='https://github.com/meliphyra-ux' target="_blank" rel="noreferrer">My projects</a>
             <Link to='/my-contacts'>My contacts</Link>
         </nav>
         <img src={menu} onClick={()=>setToggleNavigation(!toggleNavigation)} alt="burger icon"/>

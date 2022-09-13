@@ -14,16 +14,19 @@ export default function MyContacts() {
             boxName="LinkedIn"
             boxImg={linkedIn}
             boxDescription="With over 750 millions of users, might be the most recognizable job finding website in the world"
+            boxURL="https://www.linkedin.com/in/nikita-dovhich-7b0798236/"
           />
           <ContactBox 
             boxName="Telegram"
             boxImg={telegram}
             boxDescription="Cloud-based mobile and desktop messaging app with a focus on security and speed."
+            boxURL="https://t.me/meliphyra"
           />
           <ContactBox 
             boxName="Email"
             boxImg={mail}
             boxDescription="If you want, feel free to get in touch with me by... gold & old email"
+            boxURL="mailto: thelostorder@outlook.com"
           />
         </div>
     </section>

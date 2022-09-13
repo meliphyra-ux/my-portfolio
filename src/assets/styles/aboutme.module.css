@@ -66,6 +66,10 @@
     animation-delay: 0.5s;
     transition: all 0.2s ease-in-out;
 }
+.aboutMe article button a{
+    color: inherit;
+    text-decoration: none;
+}
 .aboutMe article button:hover{
     background-color: #1A3263;
     color: #FAB95B;
