@@ -5,7 +5,9 @@
     align-items: center;
     padding: 0 10%;
     top: 0;
-    background-color: #FAB95B;
+    /* background-color: #FAB95B; */
+    background-image: url(../images/stacked-waves-haikei.svg);
+    background-size: cover;
     color: #1A3263;
     min-height: calc(100vh - 100px);
 }

@@ -1,6 +1,8 @@
 .myContacts{
     min-height: calc(100vh - 100px);
-    background-color: #FAB95B;
+    /* background-color: #FAB95B; */
+    background-size: cover;
+    background-image: url(../images/stacked-waves-haikei.svg);
     width: 100%;
     padding: 0 10%;
     display: flex;
