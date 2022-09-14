@@ -1,8 +1,10 @@
 import "./App.css";
 import Header from "./components/Header";
-import AboutMe from "./pages/about-me/AboutMe";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MyContacts from "./pages/my-contacts/MyContacts";
+import React from "react";
+
+const MyContacts = React.lazy(()=> import("./pages/my-contacts/MyContacts"));
+const AboutMe = React.lazy(()=>import("./pages/about-me/AboutMe"));
 
 function App() {
   return (
@@ -10,10 +12,12 @@ function App() {
       <div className="App">
         <Header />
         <main>
+          <React.Suspense fallback={<>Loading</>}>
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/my-contacts" element={<MyContacts />} />
           </Routes>
+          </React.Suspense>
         </main>
       </div>
     </BrowserRouter>
