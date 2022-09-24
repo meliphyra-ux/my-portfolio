@@ -55,7 +55,7 @@
 .aboutMe article h2{
     font-size: 4rem;
 }
-.aboutMe article button{
+.aboutMe article a button{
     width: 50%;
     background-color: #F16821;
     color: #1A3263;
@@ -66,8 +66,7 @@
     animation-delay: 0.5s;
     transition: all 0.2s ease-in-out;
 }
-.aboutMe article button a{
-    color: inherit;
+.aboutMe article a{
     text-decoration: none;
 }
 .aboutMe article button:hover{
