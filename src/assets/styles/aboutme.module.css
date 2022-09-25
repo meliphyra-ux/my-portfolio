@@ -24,7 +24,7 @@
     border-radius: 50%;
     animation-delay: 0.75s;
 }
-.aboutMe article p, .aboutMe article h2, .aboutMe article button{
+.aboutMe article p, .aboutMe article h2, .aboutMe article a{
     position: relative;
     margin: 20px 0;
 }
@@ -55,8 +55,13 @@
 .aboutMe article h2{
     font-size: 4rem;
 }
-.aboutMe article a button{
+.aboutMe article a {
     width: 50%;
+    min-width: 200px;
+
+}
+.aboutMe article a button{
+    width: 100%;
     background-color: #F16821;
     color: #1A3263;
     border: 2px solid #1A3263;
@@ -65,6 +70,7 @@
     cursor: pointer;
     animation-delay: 0.5s;
     transition: all 0.2s ease-in-out;
+    min-width: 200px;
 }
 .aboutMe article a{
     text-decoration: none;

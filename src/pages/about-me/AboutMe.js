@@ -12,7 +12,10 @@ export default function AboutMe() {
           Frontend developer.
           <br />
           <span>Location</span>:{" "}
-          <a href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.401699,30.252512,10z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234">
+          <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.401699,30.252512,10z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234">
             Kyiv,Ukraine
           </a>
           . <br />

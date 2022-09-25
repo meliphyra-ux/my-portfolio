@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from '../assets/styles/mycontacts.module.css'
 
 export default function ContactBox({boxName, boxImg, boxDescription, boxURL}) {
   return (
-    <figure>
+    <figure className={styles.animatedFigures}>
         <img src={boxImg} alt='' />
         <figcaption>{boxName}</figcaption>
         <p>{boxDescription}</p>

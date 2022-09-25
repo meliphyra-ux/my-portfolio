@@ -65,6 +65,30 @@
     font-size: 1.3rem;
 }
 
+.animatedFigures{
+    position: relative;
+    left: -100vw;
+    animation-name: animatedFigures;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.animatedFigures:nth-child(2){
+    animation-delay: 0.2s;
+}
+.animatedFigures:last-child{
+    animation-delay: 0.4s;
+}
+
+@keyframes animatedFigures {
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+}
+
 @media screen and (max-width: 772px) {
     .myContacts div figure{
         min-height: 300px;

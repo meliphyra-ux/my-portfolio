@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
         {/* Here will be my logo */}
-        <h1>My portfolio</h1>
+        <h1>Nikita Dovhich</h1>
         <nav className={toggleNavigation === true ? styles.active : ""}>
             <Link to='/'>About me</Link>
             <a href='https://github.com/meliphyra-ux' target="_blank" rel="noreferrer">My projects</a>
